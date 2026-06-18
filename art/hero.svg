@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1120"/>
+      <stop offset="1" stop-color="#171a3a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#4f46e5" stop-opacity="0.40"/>
+      <stop offset="1" stop-color="#4f46e5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#1f2937"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect width="1200" height="420" fill="url(#dots)"/>
+  <rect width="1200" height="420" fill="url(#glow)"/>
+
+  <!-- logo tile -->
+  <rect x="80" y="150" width="120" height="120" rx="26" fill="#ffffff"/>
+  <g transform="translate(92,162) scale(1.5)">
+    <path d="M32 7.5 L52 25 H12 Z" fill="#d0584c"/>
+    <rect x="19.5" y="25" width="25" height="8" fill="#f3a25c"/>
+    <rect x="19.5" y="33" width="25" height="8" fill="#fbe1c0"/>
+    <rect x="12" y="41" width="40" height="6.5" fill="#fbe1c0"/>
+    <rect x="12" y="47.5" width="40" height="6.5" fill="#fbe1c0"/>
+    <rect x="21" y="54" width="22" height="5" fill="#f3a25c"/>
+    <rect x="21" y="59" width="22" height="5.5" fill="#fbe1c0"/>
+    <g stroke="#0c2f6b" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round" fill="none">
+      <path d="M32 7.5 L52 25 H12 Z"/>
+      <path d="M19.5 25 V41 H44.5 V25"/>
+      <rect x="12" y="41" width="40" height="13"/>
+      <path d="M24 41 V47.5 M32 41 V47.5 M40 41 V47.5"/>
+      <path d="M21 54 V64 H43 V54"/>
+    </g>
+  </g>
+
+  <!-- wordmark + tagline -->
+  <text x="240" y="195" font-size="68" font-weight="700" fill="#f1f5f9" letter-spacing="-1">Watchtower</text>
+  <rect x="244" y="214" width="64" height="4" rx="2" fill="#818cf8"/>
+  <text x="244" y="252" font-size="23" fill="#94a3b8">One production-safe dashboard for crons, queues &amp; errors — that also lets you fix them.</text>
+
+  <!-- capability pills -->
+  <g font-size="17" font-weight="600">
+    <rect x="244" y="286" width="172" height="40" rx="20" fill="#111827" stroke="#312e81"/>
+    <text x="330" y="312" fill="#c7d2fe" text-anchor="middle">📅  Schedule</text>
+    <rect x="428" y="286" width="210" height="40" rx="20" fill="#111827" stroke="#312e81"/>
+    <text x="533" y="312" fill="#c7d2fe" text-anchor="middle">⚙️  Queues &amp; Jobs</text>
+    <rect x="650" y="286" width="150" height="40" rx="20" fill="#111827" stroke="#312e81"/>
+    <text x="725" y="312" fill="#c7d2fe" text-anchor="middle">🐛  Errors</text>
+  </g>
+
+  <!-- driver chips, top-right -->
+  <g font-size="15" font-weight="600" fill="#64748b">
+    <text x="1120" y="62" text-anchor="end">database · redis · sqs</text>
+    <text x="1120" y="86" text-anchor="end" fill="#4ade80">● production-safe</text>
+  </g>
+</svg>

@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   WATCHTOWER design system.
+   Palette: the original indigo/slate scheme (kept by request).
+   Typography & components: the refined HUD layer (Chakra Petch / Hanken
+   Grotesk / IBM Plex Mono, mono badges, HUD stat numerals). All scoped under
+   #watchtower-app so nothing leaks into the host application.
+   ========================================================================== */
+@layer base {
+  /* ---- Light ---- */
+  #watchtower-app {
+    --wt-bg: #f8fafc;
+    --wt-bg-2: #f1f5f9;
+    --wt-bg-grid: #eef2f7;
+    --wt-surface: #ffffff;
+    --wt-surface-2: #f9fafb;
+    --wt-surface-3: #f1f5f9;
+    --wt-border: #e2e8f0;
+    --wt-border-strong: #cbd5e1;
+    --wt-text: #0f172a;
+    --wt-text-muted: #64748b;
+    --wt-text-faint: #94a3b8;
+    --wt-accent: #4f46e5;
+    --wt-accent-soft: rgba(79, 70, 229, 0.10);
+    --wt-accent-fg: #ffffff;
+    --wt-beacon: #4f46e5;
+    --wt-ok: #16a34a;
+    --wt-run: #2563eb;
+    --wt-warn: #d97706;
+    --wt-fail: #dc2626;
+    --wt-ring: rgba(79, 70, 229, 0.35);
+    --wt-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px -12px rgba(15, 23, 42, 0.12);
+
+    color: var(--wt-text);
+    background-color: var(--wt-bg);
+    background-image: radial-gradient(circle at 1px 1px, var(--wt-bg-grid) 1px, transparent 0);
+    background-size: 22px 22px;
+    font-family: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
+    font-feature-settings: 'ss01', 'cv01';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+  }
+
+  /* ---- Dark ---- */
+  #watchtower-app.dark {
+    --wt-bg: #0b1120;
+    --wt-bg-2: #0d1426;
+    --wt-bg-grid: #0f172a;
+    --wt-surface: #111827;
+    --wt-surface-2: #161f31;
+    --wt-surface-3: #1c2740;
+    --wt-border: #1f2937;
+    --wt-border-strong: #334155;
+    --wt-text: #e5e7eb;
+    --wt-text-muted: #94a3b8;
+    --wt-text-faint: #64748b;
+    --wt-accent: #818cf8;
+    --wt-accent-soft: rgba(129, 140, 248, 0.14);
+    --wt-accent-fg: #0b1120;
+    --wt-beacon: #818cf8;
+    --wt-ok: #4ade80;
+    --wt-run: #60a5fa;
+    --wt-warn: #fbbf24;
+    --wt-fail: #f87171;
+    --wt-ring: rgba(129, 140, 248, 0.40);
+    --wt-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 32px -16px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Typography helpers ----------------------------------------------------- */
+  #watchtower-app .font-mono,
+  #watchtower-app code,
+  #watchtower-app pre,
+  #watchtower-app .tabular-nums {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+    font-feature-settings: 'tnum';
+  }
+  .wt-display {
+    font-family: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.015em;
+  }
+  .wt-eyebrow {
+    font-family: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--wt-text-faint);
+  }
+
+  /* Scrollbars ------------------------------------------------------------- */
+  #watchtower-app *::-webkit-scrollbar { width: 10px; height: 10px; }
+  #watchtower-app *::-webkit-scrollbar-thumb {
+    background: var(--wt-border-strong);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  #watchtower-app *::-webkit-scrollbar-thumb:hover { background: var(--wt-text-faint); }
+  #watchtower-app *::-webkit-scrollbar-track { background: transparent; }
+
+  #watchtower-app ::selection { background: var(--wt-accent-soft); color: var(--wt-text); }
+}
+
+@layer components {
+  .wt-card {
+    background-color: var(--wt-surface);
+    border: 1px solid var(--wt-border);
+    border-radius: 0.75rem;
+    box-shadow: var(--wt-shadow);
+    position: relative;
+  }
+  /* Subtle hairline highlight along the top edge. */
+  .wt-card::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    border-radius: 0.75rem 0.75rem 0 0;
+    background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--wt-text) 6%, transparent), transparent);
+    pointer-events: none;
+  }
+
+  .wt-input {
+    background-color: var(--wt-surface);
+    border: 1px solid var(--wt-border-strong);
+    color: var(--wt-text);
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    outline: none;
+    transition: box-shadow 0.14s ease, border-color 0.14s ease;
+  }
+  .wt-input::placeholder { color: var(--wt-text-faint); }
+  .wt-input:focus {
+    border-color: var(--wt-accent);
+    box-shadow: 0 0 0 3px var(--wt-ring);
+  }
+
+  .wt-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    border-radius: 0.5rem;
+    padding: 0.42rem 0.72rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1rem;
+    border: 1px solid var(--wt-border-strong);
+    background-color: var(--wt-surface);
+    color: var(--wt-text);
+    cursor: pointer;
+    transition: background-color 0.14s ease, border-color 0.14s ease, opacity 0.14s, transform 0.05s ease;
+    white-space: nowrap;
+  }
+  .wt-btn:hover:not(:disabled) { background-color: var(--wt-surface-2); border-color: var(--wt-border-strong); }
+  .wt-btn:active:not(:disabled) { transform: translateY(1px); }
+  .wt-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .wt-btn-primary {
+    background-color: var(--wt-accent);
+    border-color: var(--wt-accent);
+    color: var(--wt-accent-fg);
+  }
+  .wt-btn-primary:hover:not(:disabled) { filter: brightness(1.08); }
+  .wt-btn-danger { color: var(--wt-fail); border-color: var(--wt-border-strong); }
+  .wt-btn-danger:hover:not(:disabled) {
+    background-color: color-mix(in srgb, var(--wt-fail) 12%, transparent);
+    border-color: color-mix(in srgb, var(--wt-fail) 50%, transparent);
+  }
+
+  /* Mono uppercase HUD badges (kept from the refined layer). */
+  .wt-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.34rem;
+    border-radius: 0.3rem;
+    padding: 0.14rem 0.46rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.625rem;
+    font-weight: 600;
+    line-height: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    border: 1px solid transparent;
+  }
+}

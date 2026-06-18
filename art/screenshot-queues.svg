@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="520" rx="14" fill="#0b1120"/>
+  <rect x="0.5" y="0.5" width="999" height="519" rx="14" fill="none" stroke="#1f2937"/>
+
+  <rect x="1" y="1" width="998" height="54" rx="14" fill="#0e1424"/>
+  <rect x="14" y="13" width="30" height="30" rx="7" fill="#ffffff"/>
+  <g transform="translate(20,18) scale(0.31)">
+    <path d="M32 7.5 L52 25 H12 Z" fill="#d0584c"/><rect x="19.5" y="25" width="25" height="16" fill="#f3a25c"/>
+    <rect x="12" y="41" width="40" height="13" fill="#fbe1c0"/><rect x="21" y="54" width="22" height="10" fill="#f3a25c"/>
+    <g stroke="#0c2f6b" stroke-width="4" fill="none" stroke-linejoin="round"><path d="M32 7.5 L52 25 H12 Z"/><path d="M19.5 25 V41 H44.5 V25"/><rect x="12" y="41" width="40" height="13"/><path d="M21 54 V64 H43 V54"/></g>
+  </g>
+  <text x="54" y="33" font-size="16" font-weight="700" fill="#f1f5f9">Watchtower</text>
+  <text x="360" y="33" font-size="13" fill="#94a3b8">Schedule</text>
+  <text x="446" y="33" font-size="13" font-weight="600" fill="#818cf8">Queues &amp; Jobs</text>
+  <rect x="446" y="42" width="96" height="2" rx="1" fill="#818cf8"/>
+  <text x="572" y="33" font-size="13" fill="#94a3b8">Errors</text>
+  <circle cx="952" cy="27" r="4" fill="#4ade80"/><text x="930" y="31" font-size="11" fill="#64748b" text-anchor="end">Live</text>
+
+  <!-- window selector -->
+  <rect x="14" y="68" width="210" height="30" rx="8" fill="#111827" stroke="#1f2937"/>
+  <rect x="17" y="71" width="66" height="24" rx="6" fill="#4f46e5"/><text x="50" y="87" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">24h</text>
+  <text x="120" y="87" font-size="12" fill="#94a3b8" text-anchor="middle">7d</text>
+  <text x="190" y="87" font-size="12" fill="#94a3b8" text-anchor="middle">1h</text>
+
+  <!-- stat tiles -->
+  <g>
+    <rect x="14" y="110" width="186" height="70" rx="10" fill="#111827" stroke="#1f2937"/>
+    <text x="28" y="132" font-size="10" font-weight="600" fill="#64748b">PROCESSED</text><text x="28" y="162" font-size="24" font-weight="700" fill="#e5e7eb">1,284</text>
+    <rect x="208" y="110" width="186" height="70" rx="10" fill="#111827" stroke="#1f2937"/>
+    <text x="222" y="132" font-size="10" font-weight="600" fill="#64748b">FAILED</text><text x="222" y="162" font-size="24" font-weight="700" fill="#f87171">19</text>
+    <rect x="402" y="110" width="186" height="70" rx="10" fill="#111827" stroke="#1f2937"/>
+    <text x="416" y="132" font-size="10" font-weight="600" fill="#64748b">PROCESSING</text><text x="416" y="162" font-size="24" font-weight="700" fill="#60a5fa">2</text>
+    <rect x="596" y="110" width="186" height="70" rx="10" fill="#111827" stroke="#1f2937"/>
+    <text x="610" y="132" font-size="10" font-weight="600" fill="#64748b">AVG / P95</text><text x="610" y="162" font-size="20" font-weight="700" fill="#e5e7eb">210 / 980<tspan font-size="12" fill="#64748b">ms</tspan></text>
+    <rect x="790" y="110" width="196" height="70" rx="10" fill="#111827" stroke="#1f2937"/>
+    <text x="804" y="132" font-size="10" font-weight="600" fill="#64748b">PENDING (db)</text><text x="804" y="162" font-size="24" font-weight="700" fill="#e5e7eb">37</text>
+  </g>
+
+  <!-- throughput chart -->
+  <rect x="14" y="190" width="972" height="96" rx="10" fill="#111827" stroke="#1f2937"/>
+  <text x="28" y="212" font-size="11" font-weight="700" fill="#64748b" letter-spacing="1">THROUGHPUT</text>
+  <g transform="translate(28,276)">
+    <rect x="0" y="-30" width="14" height="30" rx="2" fill="#4f46e5"/><rect x="22" y="-42" width="14" height="42" rx="2" fill="#4f46e5"/>
+    <rect x="44" y="-24" width="14" height="24" rx="2" fill="#4f46e5"/><rect x="66" y="-52" width="14" height="52" rx="2" fill="#4f46e5"/>
+    <rect x="88" y="-38" width="14" height="38" rx="2" fill="#4f46e5"/><rect x="110" y="-46" width="14" height="46" rx="2" fill="#4f46e5"/>
+    <rect x="132" y="-30" width="14" height="30" rx="2" fill="#4f46e5"/><rect x="154" y="-58" width="14" height="58" rx="2" fill="#4f46e5"/>
+    <rect x="176" y="-40" width="14" height="40" rx="2" fill="#4f46e5"/><rect x="198" y="-50" width="14" height="50" rx="2" fill="#4f46e5"/>
+    <rect x="220" y="-34" width="14" height="34" rx="2" fill="#4f46e5"/><rect x="242" y="-44" width="14" height="44" rx="2" fill="#4f46e5"/>
+    <rect x="264" y="-28" width="14" height="28" rx="2" fill="#4f46e5"/><rect x="286" y="-54" width="14" height="54" rx="2" fill="#4f46e5"/>
+    <rect x="308" y="-12" width="14" height="12" rx="2" fill="#f87171"/><rect x="330" y="-42" width="14" height="42" rx="2" fill="#4f46e5"/>
+    <rect x="352" y="-48" width="14" height="48" rx="2" fill="#4f46e5"/><rect x="374" y="-32" width="14" height="32" rx="2" fill="#4f46e5"/>
+  </g>
+
+  <!-- failed jobs -->
+  <rect x="14" y="296" width="972" height="208" rx="10" fill="#111827" stroke="#1f2937"/>
+  <text x="28" y="322" font-size="11" font-weight="700" fill="#64748b" letter-spacing="1">FAILED JOBS</text>
+  <rect x="630" y="306" width="120" height="26" rx="6" fill="#0b1120" stroke="#312e81"/><text x="690" y="323" font-size="12" fill="#c7d2fe" text-anchor="middle">Retry by type ▾</text>
+  <rect x="760" y="306" width="92" height="26" rx="6" fill="#0b1120" stroke="#312e81"/><text x="806" y="323" font-size="12" fill="#c7d2fe" text-anchor="middle">Time window</text>
+  <rect x="862" y="306" width="110" height="26" rx="6" fill="#4f46e5"/><text x="917" y="323" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">Retry all (19)</text>
+  <line x1="28" y1="342" x2="972" y2="342" stroke="#1f2937"/>
+
+  <g font-size="13">
+    <text x="28" y="372" fill="#e5e7eb" font-family="monospace">SendInvoiceEmail</text>
+    <text x="300" y="372" fill="#94a3b8">emails</text>
+    <text x="420" y="372" fill="#f87171" font-family="monospace">QueryException: deadlock</text>
+    <rect x="800" y="358" width="68" height="24" rx="6" fill="#0b1120" stroke="#312e81"/><text x="834" y="374" font-size="12" fill="#c7d2fe" text-anchor="middle">Retry</text>
+    <rect x="876" y="358" width="68" height="24" rx="6" fill="#0b1120" stroke="#7f1d1d"/><text x="910" y="374" font-size="12" fill="#f87171" text-anchor="middle">Delete</text>
+    <line x1="28" y1="392" x2="972" y2="392" stroke="#1f2937"/>
+
+    <text x="28" y="424" fill="#e5e7eb" font-family="monospace">GenerateThumbnail</text>
+    <text x="300" y="424" fill="#94a3b8">media</text>
+    <text x="420" y="424" fill="#f87171" font-family="monospace">RuntimeException: imagick</text>
+    <rect x="800" y="410" width="68" height="24" rx="6" fill="#0b1120" stroke="#312e81"/><text x="834" y="426" font-size="12" fill="#c7d2fe" text-anchor="middle">Retry</text>
+    <rect x="876" y="410" width="68" height="24" rx="6" fill="#0b1120" stroke="#7f1d1d"/><text x="910" y="426" font-size="12" fill="#f87171" text-anchor="middle">Delete</text>
+    <line x1="28" y1="444" x2="972" y2="444" stroke="#1f2937"/>
+
+    <text x="28" y="476" fill="#e5e7eb" font-family="monospace">SyncToCrm</text>
+    <text x="300" y="476" fill="#94a3b8">default</text>
+    <text x="420" y="476" fill="#f87171" font-family="monospace">ConnectException: timed out</text>
+    <rect x="800" y="462" width="68" height="24" rx="6" fill="#0b1120" stroke="#312e81"/><text x="834" y="478" font-size="12" fill="#c7d2fe" text-anchor="middle">Retry</text>
+    <rect x="876" y="462" width="68" height="24" rx="6" fill="#0b1120" stroke="#7f1d1d"/><text x="910" y="478" font-size="12" fill="#f87171" text-anchor="middle">Delete</text>
+  </g>
+</svg>
