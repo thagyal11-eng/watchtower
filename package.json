@@ -1,0 +1,21 @@
+{
+  "name": "watchtower-dashboard",
+  "version": "1.0.0",
+  "description": "Compiled, self-contained frontend SPA for the Watchtower Laravel monitoring package.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "vite build --mode production"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "vue": "^3.5.12"
+  }
+}

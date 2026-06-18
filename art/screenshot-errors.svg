@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="520" rx="14" fill="#0b1120"/>
+  <rect x="0.5" y="0.5" width="999" height="519" rx="14" fill="none" stroke="#1f2937"/>
+
+  <rect x="1" y="1" width="998" height="54" rx="14" fill="#0e1424"/>
+  <rect x="14" y="13" width="30" height="30" rx="7" fill="#ffffff"/>
+  <g transform="translate(20,18) scale(0.31)">
+    <path d="M32 7.5 L52 25 H12 Z" fill="#d0584c"/><rect x="19.5" y="25" width="25" height="16" fill="#f3a25c"/>
+    <rect x="12" y="41" width="40" height="13" fill="#fbe1c0"/><rect x="21" y="54" width="22" height="10" fill="#f3a25c"/>
+    <g stroke="#0c2f6b" stroke-width="4" fill="none" stroke-linejoin="round"><path d="M32 7.5 L52 25 H12 Z"/><path d="M19.5 25 V41 H44.5 V25"/><rect x="12" y="41" width="40" height="13"/><path d="M21 54 V64 H43 V54"/></g>
+  </g>
+  <text x="54" y="33" font-size="16" font-weight="700" fill="#f1f5f9">Watchtower</text>
+  <text x="360" y="33" font-size="13" fill="#94a3b8">Schedule</text>
+  <text x="446" y="33" font-size="13" fill="#94a3b8">Queues &amp; Jobs</text>
+  <text x="572" y="33" font-size="13" font-weight="600" fill="#818cf8">Errors</text>
+  <rect x="572" y="42" width="44" height="2" rx="1" fill="#818cf8"/>
+  <circle cx="952" cy="27" r="4" fill="#4ade80"/><text x="930" y="31" font-size="11" fill="#64748b" text-anchor="end">Live</text>
+
+  <!-- filters -->
+  <rect x="14" y="68" width="220" height="30" rx="8" fill="#111827" stroke="#1f2937"/>
+  <rect x="17" y="71" width="80" height="24" rx="6" fill="#4f46e5"/><text x="57" y="87" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">Recent</text>
+  <text x="160" y="87" font-size="12" fill="#94a3b8" text-anchor="middle">Frequency</text>
+  <rect x="246" y="68" width="260" height="30" rx="8" fill="#111827" stroke="#1f2937"/>
+  <rect x="249" y="71" width="92" height="24" rx="6" fill="#1f2937"/><text x="295" y="87" font-size="12" font-weight="600" fill="#e5e7eb" text-anchor="middle">Unresolved</text>
+  <text x="392" y="87" font-size="12" fill="#94a3b8" text-anchor="middle">Resolved</text>
+  <text x="470" y="87" font-size="12" fill="#94a3b8" text-anchor="middle">All</text>
+
+  <!-- exception rows -->
+  <g>
+    <!-- row 1 -->
+    <rect x="14" y="110" width="972" height="116" rx="10" fill="#111827" stroke="#1f2937"/>
+    <rect x="14" y="110" width="3" height="116" fill="#f87171"/>
+    <rect x="30" y="126" width="74" height="22" rx="5" fill="#3b1418"/><text x="40" y="141" font-size="11" font-weight="700" fill="#f87171">JOB</text>
+    <text x="116" y="143" font-size="16" font-weight="700" fill="#e5e7eb" font-family="monospace">QueryException</text>
+    <text x="30" y="172" font-size="13" fill="#94a3b8" font-family="monospace">SQLSTATE[HY000]: Lock wait timeout exceeded · OrderRepository.php:88</text>
+    <text x="30" y="202" font-size="12" fill="#64748b">first seen 9d ago · last seen 4m ago</text>
+    <text x="724" y="150" font-size="34" font-weight="700" fill="#f87171" text-anchor="end">47</text>
+    <text x="724" y="168" font-size="11" fill="#64748b" text-anchor="end">occurrences</text>
+    <rect x="760" y="126" width="100" height="28" rx="6" fill="#0b1120" stroke="#312e81"/><text x="810" y="144" font-size="12" fill="#c7d2fe" text-anchor="middle">Resolve</text>
+    <rect x="868" y="126" width="104" height="28" rx="6" fill="#0b1120" stroke="#1f2937"/><text x="920" y="144" font-size="12" fill="#94a3b8" text-anchor="middle">Stack trace ▾</text>
+
+    <!-- row 2 -->
+    <rect x="14" y="238" width="972" height="116" rx="10" fill="#111827" stroke="#1f2937"/>
+    <rect x="14" y="238" width="3" height="116" fill="#fbbf24"/>
+    <rect x="30" y="254" width="100" height="22" rx="5" fill="#3a2c0a"/><text x="40" y="269" font-size="11" font-weight="700" fill="#fbbf24">REQUEST</text>
+    <text x="142" y="271" font-size="16" font-weight="700" fill="#e5e7eb" font-family="monospace">NotFoundHttpException</text>
+    <text x="30" y="300" font-size="13" fill="#94a3b8" font-family="monospace">No query results for model [Invoice] 9931 · InvoiceController.php:122</text>
+    <text x="30" y="330" font-size="12" fill="#64748b">first seen 5d ago · last seen 31m ago</text>
+    <text x="724" y="278" font-size="34" font-weight="700" fill="#fbbf24" text-anchor="end">12</text>
+    <text x="724" y="296" font-size="11" fill="#64748b" text-anchor="end">occurrences</text>
+    <rect x="760" y="254" width="100" height="28" rx="6" fill="#0b1120" stroke="#312e81"/><text x="810" y="272" font-size="12" fill="#c7d2fe" text-anchor="middle">Resolve</text>
+    <rect x="868" y="254" width="104" height="28" rx="6" fill="#0b1120" stroke="#1f2937"/><text x="920" y="272" font-size="12" fill="#94a3b8" text-anchor="middle">Stack trace ▾</text>
+
+    <!-- row 3 (resolved) -->
+    <rect x="14" y="366" width="972" height="116" rx="10" fill="#0e1626" stroke="#1f2937"/>
+    <rect x="14" y="366" width="3" height="116" fill="#4ade80"/>
+    <rect x="30" y="382" width="100" height="22" rx="5" fill="#14331f"/><text x="40" y="397" font-size="11" font-weight="700" fill="#4ade80">SCHEDULE</text>
+    <text x="142" y="399" font-size="16" font-weight="700" fill="#94a3b8" font-family="monospace">RuntimeException</text>
+    <rect x="330" y="383" width="78" height="20" rx="5" fill="#14331f"/><text x="369" y="397" font-size="10" font-weight="700" fill="#4ade80" text-anchor="middle">RESOLVED</text>
+    <text x="30" y="428" font-size="13" fill="#64748b" font-family="monospace">Disk [s3] is not configured · ExportReport.php:31</text>
+    <text x="30" y="458" font-size="12" fill="#64748b">resolved 2h ago</text>
+    <text x="724" y="406" font-size="34" font-weight="700" fill="#64748b" text-anchor="end">3</text>
+    <rect x="760" y="382" width="100" height="28" rx="6" fill="#0b1120" stroke="#1f2937"/><text x="810" y="400" font-size="12" fill="#94a3b8" text-anchor="middle">Reopen</text>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+providers:
+  - Watchtower\WatchtowerServiceProvider
+  - Workbench\App\Providers\WorkbenchServiceProvider
+
+env:
+  - APP_ENV=local
+  - APP_KEY=base64:NftgQjTiQ5gbM/bxTh3CZ/lnuBT39yG8aodCgJTT5so=
+  - DB_CONNECTION=sqlite
+  - DB_DATABASE=workbench/database/preview.sqlite
+  - QUEUE_CONNECTION=database

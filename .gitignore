@@ -1,0 +1,24 @@
+# Dependencies
+/vendor
+/node_modules
+
+# Lock files (resolved fresh per environment)
+composer.lock
+package-lock.json
+
+# NOTE: /dist is intentionally NOT ignored. The compiled Vue dashboard
+# assets are committed and shipped as part of this package.
+
+# Test / build caches
+.phpunit.result.cache
+.phpunit.cache
+build/
+.cache/
+
+# Workbench preview database (generated locally, never shipped)
+workbench/database/*.sqlite
+
+# Editor / OS
+.idea
+.vscode
+.DS_Store
